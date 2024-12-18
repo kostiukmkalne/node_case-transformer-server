@@ -41,7 +41,7 @@ const createServer = () => {
 
     const text = convertToCase(PATH, toCase.toUpperCase());
 
-    const objctToReturn = {
+    const objectToReturn = {
       originalText: PATH,
       targetCase: toCase,
       originalCase: text.originalCase,
@@ -49,7 +49,7 @@ const createServer = () => {
     };
 
     res.writeHead(200, { 'Content-Type': 'application/json' });
-    res.end(JSON.stringify(objctToReturn));
+    res.end(JSON.stringify(objectToReturn));
   });
 };
 
